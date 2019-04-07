@@ -36,7 +36,7 @@ class MusicSpider(scrapy.Spider):
         循环每个字母
         :return:
         """
-        for index in range(15, 16):
+        for index in range(1, 27):
             page = 1
             print("第" + str(index) + "个字母")
             yield Request(self.singer_list_url + "?data=" + self.singer_list_params_data % (str(index), str(0), str(1)),
